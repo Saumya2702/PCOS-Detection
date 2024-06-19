@@ -1,0 +1,1298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin:0;
+  padding:90;
+  box-sizing:border-box; 
+  font-family:'Times New Roman', Times, serif;
+  outline:none; border: none;
+  text-decoration:none;
+  transition:.2s linear;
+}
+.btn {
+  background: #cd2c7a;
+  color: #fff;
+  width: 70%;
+  border: none;
+  padding: 16px;
+}
+
+/********************************ABOUT COMPONENT********************************************/
+.about {
+  padding: 40px 100px;
+  min-height: 800px;
+  background-color: #fff;
+}
+.about .hero {
+  display: flex;
+  gap: 10px;
+  background-color: #fff;
+}
+.about .hero .banner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  
+}
+.about .hero .banner img {
+  height: 50%;
+  width: 100%;
+}
+.about .hero .banner h3 {
+  font-family:'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #ed4c72;
+}
+.about .hero .banner p {
+  font-family:'Times New Roman', Times, serif;
+  font-style:inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #f3839d;
+}
+.about .our_progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 50px 0;
+}
+.about .our_progress .card {
+  border: 1px solid rgb(133, 133, 133);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+.about .our_progress .icon,
+.about .services .icon {
+  display: flex;
+  padding: 13px;
+  background: #80808078;
+  border-radius: 100%;
+}
+.about .our_progress .icon svg,
+.about .services .icon svg {
+  color: #fff;
+  background: rgb(191, 57, 99);
+  border-radius: 100%;
+  font-size: 45px;
+  padding: 9px;
+  transition: 0.3s;
+}
+.about .our_progress h3,
+.about .services h3 {
+  font-size: 28px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.about .our_progress p,
+.about .services p {
+  color: rgb(206, 81, 139);
+  font-size: 16px;
+  transition: 0.3s;
+}
+.about .our_progress .card:hover {
+  background: #facc15;
+  transition: 0.3s;
+}
+.about .our_progress .card:hover .icon svg {
+  background: #fff;
+  color: #f15ba1;
+  transition: 0.3s;
+}
+.about .our_progress .card:hover h3 {
+  color: #fff;
+  transition: 0.3s;
+}
+.about .our_progress .card:hover p {
+  color: #fff;
+  transition: 0.3s;
+}
+.services {
+  display: flex;
+  gap: 20px;
+  padding: 50px 0;
+}
+.services .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 15px;
+}
+@media (max-width: 1250px) {
+  .about .services .card {
+    text-align: center;
+  }
+  .about .services h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1060px) {
+  .about .our_progress {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .about .services h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 920px) {
+  .about {
+    padding: 40px 20px;
+    min-height: 800px;
+  }
+}
+@media (max-width: 800px) {
+  .about .hero {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 700px) {
+  .services {
+    flex-direction: column;
+  }
+}
+@media (max-width: 660px) {
+  .about .our_progress {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+
+
+/************************FOOTER COMPONENT************************************************/
+.footer {
+  background-color: #f77a97db;/* Pinkish shade */
+  color: #333;
+  padding: 20px 0;
+  text-align: left; /* Align text to the left */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around; 
+  align-items: flex-start; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.footer-section {
+  margin: 20px;
+  flex: 1; 
+}
+
+.footer-section.logo {
+  margin-bottom: 20px;
+}
+
+.footer-section.logo img {
+  width: 150px; 
+  height: auto;
+}
+
+.footer-section h2, .footer-section h3 {
+  font-weight: 600;
+  color: #0b0004;
+}
+
+.footer-section p, .footer-section ul, .footer-section li, .footer-section a {
+   color: #0b0004;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 10px 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center; 
+  width: 100%; 
+}
+
+.footer-bottom span {
+  color: #555;
+}
+
+
+
+
+
+
+/*******************NAVBAR COMPONENT***************************************/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid rgb(238, 232, 232);
+  top:0px;
+  padding: 20px 110px;
+  align-items: center;
+  background-color: #f77a97db;
+}
+.navbar .hamburger {
+  display: none;
+}
+.navbar .logo {
+  flex: 1;
+}
+.navbar .logo img {
+  width: 100px;
+}
+.navbar .links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .links ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar .links ul li {
+  list-style-type: none;
+}
+.navbar .links ul li a {
+  text-decoration: none;
+  display: flex;
+  color: #fff;
+  transition: 0.3s;
+}
+.navbar .links ul li a:hover {
+  color: #ce264d;
+  transition: 0.3s;
+}
+.navbar .links ul:last-child {
+  gap: 10px;
+}
+.navbar .links ul:last-child li {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.navbar .links ul:last-child li:hover {
+  background: transparent;
+  transition: 0.3s;
+}
+.navbar .links ul:last-child li:hover svg {
+  color: #facc15;
+  transition: 0.3s;
+}
+.navbar .links ul li svg {
+  font-size: 24px;
+  color: #fff;
+}
+@media (max-width: 1320px) {
+  .navbar .logo {
+    flex: none;
+    width: 200px;
+  }
+}
+@media (max-width: 1140px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: 130px;
+    overflow-y: hidden;
+    transition: 0.3s;
+  }
+  .navbar .hamburger {
+    display: flex;
+    font-size: 24px;
+  }
+  .navbar .links {
+    order: 1;
+    width: 100%;
+    flex: none;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .show_navbar {
+    height: 103.42px;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 1520px) {
+  .navbar {
+    padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar .links ul:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .links ul:last-child {
+    flex-direction: row;
+  }
+  .show_navbar {
+    height: 447.42px;
+    transition: 0.3s;
+  }
+}
+
+/*************************NOTFOUND COMPONENT***************************************/
+.notfound {
+  padding: 40px 100px;
+  min-height: 800px;
+}
+.notfound .content {
+  display: flex;
+  min-height: 780px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.notfound .content h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+.notfound .content p {
+  font-size: 18px;
+  color: #111;
+}
+.notfound .content .btn {
+  width: fit-content;
+  text-decoration: none;
+}
+@media (max-width: 950px) {
+  .notfound .content h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 920px) {
+  .notfound {
+    padding: 40px 20px;
+    min-height: 400px;
+  }
+  .notfound .content {
+    min-height: 400px;
+  }
+}
+@media (max-width: 560px) {
+  .notfound .content h1 {
+    font-size: 2.5rem;
+  }
+  .notfound .content p {
+    text-align: center;
+  }
+}
+@media (max-width: 410px) {
+  .notfound .content h1 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/**************************HERO MINI COMPONENT*********************************/
+
+.hero {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 20px; 
+  background-color: #f5d0e3;
+  transition: background-color 0.3s ease-in-out; /* Transition for background color */
+}
+
+.hero.banner {
+  text-align: center; 
+  background-color: #cd2c7a;
+  transition: background-color 0.3s ease-in-out, text-align 0.3s ease-in-out; /* Transition for multiple properties */
+}
+
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 20px; 
+  color: #d81b60;
+  transition: color 0.3s ease-in-out, margin-bottom 0.3s ease-in-out; /* Transition for color and margin */
+}
+
+.button {
+  background-color: #cd2c7a;
+  color: #ffffff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Enhanced transition for background and transform */
+  font-size: medium;
+}
+
+.button:hover {
+  background-color: #ed0f82;
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Applying animations */
+.hero.banner {
+  animation: fadeIn 1s ease-in-out;
+  
+}
+
+.banner h1 {
+  animation: slideIn 0.5s ease-in-out; 
+}
+
+.slideshow-container {
+  background-color: #f5d0e3; 
+}
+
+.slideshow {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f5d0e3; 
+  transition: transform 0.5s ease-in-out, background-color 0.3s ease-in-out; 
+}
+
+.carousel .slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  background: #cd2c7a;
+}
+
+.carousel .control-arrow:hover,
+.carousel.carousel-slider .control-arrow:hover {
+  background: #ff69b4;
+}
+
+/********************** Diet Planner COMPONENT************************/
+.diet-planner {
+  font-family: Arial, sans-serif;
+  color: #dc1565;
+  padding: 20px 210px;
+  background-color: #fff0f5; /* Light pink background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 800px;
+  margin: 0 auto; 
+  margin-bottom: 5%;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.diet-planner h1,
+.diet-planner h2 {
+  color: #d6336c; /* Dark pink color */
+  padding-bottom: 10px;
+  text-align: center;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+.diet-planner ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.diet-planner ul li {
+  background: #ffe4e1; /* Light pink background for list items */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out; /* Background color transition */
+}
+
+.diet-planner ul li:hover {
+  background-color: #ffd1dc; /* Lighter pink on hover */
+}
+
+.diet-planner label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #d6336c; /* Dark pink color */
+  transition: color 0.3s ease-in-out; /* Color transition */
+}
+
+.diet-planner input[type="number"],
+select {
+  width: 100%;
+  max-width: 300px; /* Adjust the maximum width */
+  padding: 10px;
+  margin: 0 auto 15px; /* Center the input and select elements */
+  border: 1px solid #d6336c; /* Dark pink border */
+  border-radius: 5px;
+  display: block; /* Ensure the elements are block-level for centering */
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Border color and box-shadow transition */
+}
+
+.diet-planner input[type="number"]:focus,
+select:focus {
+  border-color: #ba2f4d; /* Darker pink border on focus */
+  box-shadow: 0 0 5px rgba(218, 51, 108, 0.5); /* Box-shadow on focus */
+}
+
+.diet-planner button {
+  background-color: #d6336c; /* Dark pink background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Center the button */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Background color and transform transition */
+}
+
+.diet-planner button:hover {
+  background-color: #ba2f4d; /* Darker pink */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.diet-planner .meal-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.diet-planner .meal-plan {
+  background: #ffccd5; /* Light pink background for meal plans */
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px; /* Adjust the maximum width */
+  margin: 0 auto 20px; /* Center the meal plan and add bottom margin */
+  transition: transform 0.3s ease-in-out; /* Transform transition */
+}
+
+.diet-planner .meal-plan:hover {
+  transform: translateY(-5px); /* Slightly move up on hover */
+}
+
+.diet-planner .meal-plan h3 {
+  color: #ba2f4d; /* Darker pink for subheadings */
+  border-bottom: 1px solid #ba2f4d;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.diet-planner .introduction,
+.input-section,
+.meal-plan-section {
+  margin-bottom: 20px;
+  color: #ba2f4d;
+  text-align: center;
+}
+
+.diet-planner .input-section input,
+.input-section select {
+  margin-bottom: 10px;
+  color: #ba2f4d;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .meal-plans {
+    flex-direction: column;
+    align-items: center; /* Center the meal plans in column layout */
+  }
+  .meal-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/**********************************SelfDiagnosis**********************************************/
+.self-diagnosis-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100vw;  /* Fills the entire viewport width */
+  height: 100vh;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.self-diagnosis, .image-upload {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  font-family: Arial, sans-serif;
+  color: #e91e63;
+  transition: transform 0.3s ease-in-out; /* Transform transition */
+}
+
+.self-diagnosis:hover, .image-upload:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.self-diagnosis h2 {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #e91e63;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: x-large;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+.self-diagnosis h4 {
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times, serif;
+  color: #f78bb6;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+.self-diagnosis .question, .image-upload-container {
+  margin-bottom: 15px;
+  color: #e91e63;
+  transition: color 0.3s ease-in-out; /* Color transition */
+}
+
+.self-diagnosis label, .image-upload-label {
+  margin-left: 10px;
+  color: #e91e63;
+  font-size: medium;
+  transition: color 0.3s ease-in-out; /* Color transition */
+}
+
+.self-diagnosis .submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f3839d;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Background color and transform transition */
+}
+
+.self-diagnosis .submit-button:hover {
+  background-color: #df88b3;
+  transform: translateY(-3px); /* Slightly move up on hover */
+}
+
+.self-diagnosis .image-upload-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f7c0d8;
+  color: #e91e63;
+  border: 1px solid #e91e63;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Background color and border color transition */
+}
+
+.self-diagnosis .image-upload-input:hover {
+  background-color: #f3a6c1;
+  color: #e91e63;
+}
+
+.self-diagnosis .image-upload-input:focus {
+  border-color: #df88b3; /* Darker pink border on focus */
+  box-shadow: 0 0 5px rgba(223, 136, 179, 0.5); /* Box-shadow on focus */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/**********************************CycleTracker ********************************/
+
+.cycle-tracker {
+  width: 100vw;
+  min-height: 800px;
+  padding: 40px 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.cycle-tracker h1 {
+  color: #e91e63;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out; /* Transform transition */
+}
+
+.input-section:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.input-section label {
+  margin: 10px 0;
+  transition: color 0.3s ease-in-out; /* Color transition */
+}
+
+.input-section input {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Border color and box-shadow transition */
+}
+
+.input-section input:focus {
+  border-color: #e91e63; /* Dark pink border on focus */
+  box-shadow: 0 0 5px rgba(233, 30, 99, 0.5); /* Box-shadow on focus */
+}
+
+.input-section button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Background color and transform transition */
+}
+
+.input-section button:hover {
+  background-color: #d81b60;
+  transform: translateY(-3px); /* Slightly move up on hover */
+}
+
+.calendar {
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.calendar h2 {
+  color: #e91e63;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.calendar-cell {
+  background-color: #ffe6f0;
+  padding: 10px;
+  border: 1px solid #e91e63;
+  border-radius: 4px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Background color and transform transition */
+}
+
+.calendar-cell:hover {
+  background-color: #ffd1dc;
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+/****************************************lifestyle********************************/
+
+.lifestylesuggestion
+.about {
+  background-color: #fce4ec; /* Light pink background */
+  color: #993370; /* Dark pink text */
+  padding: 20px;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e91e63;
+}
+
+.heroine {
+  display: flex;
+  margin-bottom: 20px;
+}
+.about p {
+  text-align:justify;
+  margin-bottom: 20px;
+  font-size:large;
+  color: #f70a68;
+}
+
+.banner {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f5d0e3; /* Lighter pink for content boxes */
+}
+
+.banner h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight:bolder;
+  color: #e1196d;
+  gap: 120px;
+}
+
+.banner img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/******************Yoga-Planner*************/
+.yogaplanner {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.yogaplanner body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f9f2f4;
+  margin: 0;
+  padding: 0;
+}
+
+.yogaplanner h1, h2, h4 {
+  color: #d6336c;
+  text-align: center;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+.yogaplanner .introduction,
+.yogaplanner .calendar-section,
+.yogaplanner .daily-routine,
+.yogaplanner .video-tutorials,
+.yogaplanner .resources,
+.yogaplanner .faq {
+  background-color: #f6d5e2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transform and box-shadow transition */
+}
+
+.yogaplanner .introduction:hover,
+.yogaplanner .calendar-section:hover,
+.yogaplanner .daily-routine:hover,
+.yogaplanner .video-tutorials:hover,
+.yogaplanner .resources:hover,
+.yogaplanner .faq:hover {
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker box-shadow on hover */
+}
+
+.yogaplanner .introduction h1,
+.yogaplanner .calendar-section h2,
+.yogaplanner .daily-routine h3 {
+  border-bottom: 2px solid #ffccd5;
+  padding-bottom: 10px;
+  color: #ce264d;
+  text-align: center;
+  animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+.yogaplanner .calendar-section {
+  text-align: center;
+  color: #f70a68;
+}
+
+.yogaplanner .yoga-calendar {
+  margin-top: 60px;
+  border-radius: 8px;
+  border: none;
+  margin: 0 auto;
+}
+
+.yogaplanner .daily-routine ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  color: #ce264d;
+  font-size: large;
+}
+
+.yogaplanner .pose-item {
+  padding: 10px;
+  background-color: #efe6ea;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Background color and transform transition */
+  margin: 0 auto;
+}
+
+.yogaplanner .pose-item:hover {
+  background-color: #d6336c;
+  color: white;
+  transform: scale(0.9); /* Slightly increase size on hover */
+}
+
+.yogaplanner .pose-description {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #d91459;
+  font-size: large;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.yogaplanner .pose-description h4 {
+  margin-top: 0;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.yogaplanner .pose-description ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.yogaplanner .pose-description img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transform and box-shadow transition */
+  margin-bottom: 0 auto;
+}
+
+.yogaplanner .pose-description img:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker box-shadow on hover */
+}
+
+.yogaplanner .react-calendar {
+  width: 50%;
+  border: none;
+}
+
+.yogaplanner .react-calendar__tile {
+  border-radius: 4px;
+  transition: transform 0.3s, background-color 0.3s; /* Transform and background-color transition */
+}
+
+.yogaplanner .react-calendar__tile--active {
+  background: #d6336c;
+  color: white;
+  transform: scale(1.05); /* Slightly increase size on active */
+}
+
+.yogaplanner .react-calendar__tile--now {
+  background: #ffccd5;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/****************************Contact Form****************************/
+
+/* General Styles */
+/* General Styles */
+.contact-container {
+  position: relative;
+  width: 100vw; /* Ensure the container takes full width */
+  height: 100vh; /* Ensure the container takes full height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #fff0f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* Remove border radius */
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe6f0;
+  color: #333;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure body takes full height */
+  width: 100%; /* Ensure body takes full width */
+}
+
+.contact-form {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto; /* Center form horizontally within container */
+  width: 100%; /* Ensure the form takes full width */
+  max-width: 500px; /* Set a fixed width for the form */
+  padding: 20px; /* Add some padding to the form */
+  animation: slideUp 1s ease-in-out; /* Slide-up animation */
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #e1196d;
+  font-size: xx-large;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #ff1493;
+  width: 100%;
+  font-size: large;  
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ff69b4;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 20px;
+  animation: slideUp 1.5s ease-in-out; /* Slide-up animation */
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff1493;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Background color transition */
+}
+
+.contact-form button:hover {
+  background-color: #ff69b4;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ 
+/*************************LOGIN*************************/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5; /* Light gray background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100vw; /* Adjust width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-container .form-group {
+  margin-bottom: 15px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-container input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.login-container .forgot-password {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.login-container .forgot-password a {
+  color: #f06; /* Pink color for "Forgot Password?" */
+  text-decoration: none;
+}
+
+.login-container .forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.login-container button[type="submit"] {
+  background-color: #f06; /* Pink color for login button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #e04; /* Slightly darker pink on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
